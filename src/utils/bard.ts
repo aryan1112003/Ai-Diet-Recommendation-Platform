@@ -1,6 +1,6 @@
 import { GoogleGenerativeAI } from '@google/generative-ai';
 
-const genAI = new GoogleGenerativeAI('AIzaSyAwgJhpeQ5VwFTJmx_wqGS6JwEprGf36uE');
+const genAI = new GoogleGenerativeAI('your api');
 
 export async function generateMealPlan(preferences: any) {
   const model = genAI.getGenerativeModel({ model: 'gemini-pro' });
